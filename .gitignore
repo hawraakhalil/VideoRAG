@@ -72,9 +72,6 @@ bandit.yaml
 
 # Media / downloads / processed data
 downloads/
-data/embeddings/
-data/transcripts/
-data/keyframes/
 *.npy
 *.json
 *.pkl
