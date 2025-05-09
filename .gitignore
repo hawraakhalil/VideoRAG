@@ -72,7 +72,6 @@ bandit.yaml
 
 # Media / downloads / processed data
 downloads/
-*.npy
 *.pkl
 
 # Model files
