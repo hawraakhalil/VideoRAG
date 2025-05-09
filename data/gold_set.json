@@ -1,0 +1,87 @@
+{
+    "answerable_questions": [
+      {
+        "question": "What is the main topic of the seminar?",
+        "timestamp": "0:00:00 - 0:00:13"
+      },
+      {
+        "question": "Who is the guest speaker at the seminar?",
+        "timestamp": "0:00:13 - 0:00:26"
+      },
+      {
+        "question": "What is the introduction of the talk about?",
+        "timestamp": "0:00:40 - 0:00:51"
+      },
+      {
+        "question": "Who are the collaborators on the speaker's joint work?",
+        "timestamp": "0:01:31 - 0:01:46"
+      },
+      {
+        "question": "What are the four sections of the talk?",
+        "timestamp": "0:01:56 - 0:02:10"
+      },
+      {
+        "question": "What problem does the speaker introduce with the 15 puzzle game?",
+        "timestamp": "0:03:26 - 0:03:52"
+      },
+      {
+        "question": "What is the purpose of the reconfiguration graph in combinatorial problems?",
+        "timestamp": "0:04:48 - 0:05:16"
+      },
+      {
+        "question": "What makes token sliding and token jumping interesting to researchers?",
+        "timestamp": "0:01:17 - 0:01:31"
+      },
+      {
+        "question": "How is the 15 puzzle related to combinatorial reconfiguration?",
+        "timestamp": "0:04:34 - 0:04:48"
+      },
+      {
+        "question": "What is the definition of PSPACE and its relevance to the talk?",
+        "timestamp": "0:17:56 - 0:18:08"
+      },
+      {
+        "question": "What is the key difference between token sliding and token jumping in combinatorial reconfiguration?",
+        "timestamp": "0:14:44 - 0:14:55"
+      },
+      {
+        "question": "What does the speaker say about the complexity of token jumping in bipartite graphs?",
+        "timestamp": "0:22:30 - 0:22:41"
+      },
+      {
+        "question": "What surprising result did the speaker find regarding the complexity of token jumping and sliding?",
+        "timestamp": "0:20:15 - 0:20:40"
+      },
+      {
+        "question": "How are the results for token sliding and token jumping different in bipartite graphs?",
+        "timestamp": "0:23:18 - 0:23:29"
+      },
+      {
+        "question": "What is the significance of 'C4 free graphs' in the context of the talk?",
+        "timestamp": "0:26:04 - 0:26:33"
+      }
+    ],
+    "unanswerable_questions": [
+      {
+        "question": "What is the definition of 'girth' in mathematical terms?",
+        "timestamp": "No match in the transcript"
+      },
+      {
+        "question": "How do you solve the '15 puzzle' in just a few moves?",
+        "timestamp": "No match in the transcript"
+      },
+      {
+        "question": "What is the exact history of combinatorial reconfiguration?",
+        "timestamp": "No match in the transcript"
+      },
+      {
+        "question": "What are the specific algorithms used in quantum computing discussed in the talk?",
+        "timestamp": "No match in the transcript"
+      },
+      {
+        "question": "What are the specific complexities of token jumping in graphs with more than five cycles?",
+        "timestamp": "No match in the transcript"
+      }
+    ]
+  }
+  
