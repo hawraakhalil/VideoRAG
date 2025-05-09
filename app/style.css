@@ -1,0 +1,460 @@
+/* VideoRAG - Modern Purple Theme Stylesheet */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset and base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    background-color: #f8f9fd;
+}
+
+/* Streamlit container and layout improvements */
+.main .block-container {
+    max-width: 90% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.05);
+}
+
+.stApp {
+    max-width: 100%;
+    background: linear-gradient(135deg, #f5f3ff 0%, #e9e4ff 100%);
+}
+
+/* Purple theme colors */
+:root {
+    --primary-purple: #8a2be2;
+    --light-purple: #c3a1ff;
+    --dark-purple: #6a0dad;
+    --accent-purple: #9370db;
+    --very-light-purple: #f5f0ff;
+    --text-on-purple: #ffffff;
+    --hover-purple: #9a4fea;
+    --border-purple: #d9c7ff;
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-purple);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Chat message styling */
+.chat-message {
+    padding: 1.5rem; 
+    border-radius: 12px; 
+    margin-bottom: 1.2rem; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 100%;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-message.user {
+    background-color: var(--very-light-purple);
+    color: #333333;
+    border-left: 5px solid var(--primary-purple);
+}
+
+.chat-message.assistant {
+    background-color: #ffffff;
+    color: #333333;
+    border-left: 5px solid var(--accent-purple);
+}
+
+.chat-message .timestamp {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.chat-message .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.chat-message .avatar {
+    min-width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    background-color: var(--primary-purple);
+    color: white;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.chat-message.user .avatar {
+    background-color: var(--accent-purple);
+}
+
+.chat-message .message {
+    flex-grow: 1;
+    width: 100%;
+    line-height: 1.5;
+}
+
+/* Highlight for emphasizing text */
+.highlight {
+    background-color: var(--light-purple);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    color: var(--dark-purple);
+    font-weight: 500;
+}
+
+/* Video container styling */
+.video-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border: 2px solid var(--border-purple);
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: white;
+    border-right: 1px solid var(--border-purple);
+    padding-top: 2rem;
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 2px 0 10px rgba(138, 43, 226, 0.05);
+}
+
+[data-testid="stSidebarContent"] {
+    padding: 1rem;
+}
+
+.sidebar .button {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+/* Search result styling */
+.search-result {
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid var(--border-purple);
+    transition: all 0.2s ease;
+}
+
+.search-result:hover {
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.1);
+    transform: translateY(-2px);
+}
+
+.search-result .timestamp {
+    font-weight: 600;
+    color: var(--primary-purple);
+    padding: 0.2rem 0.5rem;
+    background-color: var(--very-light-purple);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.search-result .confidence {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+/* Custom styling for Streamlit components */
+.stTextInput > div > div > input {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    border: 2px solid var(--border-purple);
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2) !important;
+}
+
+.stTextInput {
+    width: 100%;
+}
+
+.stButton > button {
+    border-radius: 8px;
+    background-color: var(--primary-purple);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(138, 43, 226, 0.3);
+}
+
+.stButton > button:hover {
+    background-color: var(--hover-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(138, 43, 226, 0.4);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* Selectbox styling */
+[data-testid="stSelectbox"] {
+    width: 100%;
+}
+
+[data-testid="stSelectbox"] > div:first-child {
+    border-radius: 8px;
+    border: 2px solid var(--border-purple);
+}
+
+[data-testid="stSelectbox"] > div:first-child:focus-within {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2) !important;
+}
+
+/* Loading spinner */
+.stSpinner > div > div {
+    border-color: var(--primary-purple) transparent transparent transparent;
+}
+
+/* Image caption */
+.stImage img + div {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Keyframe display */
+.keyframe-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.keyframe-container img {
+    border-radius: 8px;
+    max-height: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 2px solid var(--border-purple);
+    transition: all 0.2s ease;
+}
+
+.keyframe-container img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(138, 43, 226, 0.2);
+}
+
+/* Timestamp link */
+.timestamp-link {
+    color: var(--primary-purple);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--very-light-purple);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.timestamp-link:hover {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    text-decoration: none;
+}
+
+/* Fix for Chat interface width */
+[data-testid="stForm"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+[data-testid="stVerticalBlock"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Improve chat input field */
+.chat-input-container {
+    border-radius: 12px;
+    border: 2px solid var(--border-purple);
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.1);
+}
+
+.chat-input-container:focus-within {
+    border-color: var(--primary-purple);
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.15);
+}
+
+/* Make video player responsive */
+.stVideo {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* App header */
+.app-header {
+    background: linear-gradient(120deg, var(--primary-purple), var(--dark-purple));
+    color: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2);
+    text-align: center;
+}
+
+.app-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.app-header p {
+    margin-top: 0.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.5rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid var(--border-purple);
+    color: var(--dark-purple);
+    transition: all 0.2s ease;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: var(--very-light-purple);
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: var(--primary-purple);
+    color: white;
+    border-color: var(--primary-purple);
+}
+
+/* Progress bar */
+[data-testid="stProgress"] > div:first-child {
+    background-color: var(--light-purple);
+}
+
+[data-testid="stProgress"] > div:nth-child(2) {
+    background-color: var(--primary-purple);
+}
+
+/* Cards */
+.info-card {
+    padding: 1.2rem;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid var(--border-purple);
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(138, 43, 226, 0.05);
+    transition: all 0.2s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.1);
+}
+
+.info-card h4 {
+    color: var(--dark-purple);
+    margin-bottom: 0.5rem;
+}
+
+/* Alerts and info boxes */
+[data-testid="stAlert"] {
+    border-radius: 8px;
+    border-left-color: var(--primary-purple);
+}
+
+.info-box {
+    background-color: var(--very-light-purple);
+    border-left: 4px solid var(--primary-purple);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

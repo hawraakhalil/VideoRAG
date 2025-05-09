@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Bandit security scans
+bandit.yaml
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Local database / cache
+*.sqlite3
+*.db
+*.bak
+*.sql
+*.tar.gz
+
+# Media / downloads / processed data
+downloads/
+data/embeddings/
+data/transcripts/
+data/keyframes/
+*.npy
+*.json
+*.pkl
+
+# Model files
+*.pt
+*.bin
+
+# Streamlit cache
+.streamlit/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Optional: exclude requirements locking if not in use
+poetry.lock
+Pipfile.lock
